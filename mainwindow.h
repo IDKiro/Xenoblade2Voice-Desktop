@@ -49,6 +49,8 @@ private slots:
 
 	void on_radioButton_lang_clicked();
 
+    void on_radioButton_dlc_clicked();
+
 	void on_listWidget_char_clicked();
 
 	void on_listWidget_talk_clicked();

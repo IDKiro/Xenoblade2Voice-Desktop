@@ -1242,43 +1242,172 @@ background-color: rgba(191, 191, 191, 31);
      <string/>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_lang">
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>210</y>
-      <width>81</width>
-      <height>21</height>
+      <x>390</x>
+      <y>200</y>
+      <width>111</width>
+      <height>31</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">QRadioButton::indicator { 
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="icon.qrc">:/icon/assets/icon/language.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_lang">
+       <property name="styleSheet">
+        <string notr="true">QRadioButton::indicator { 
     width: 28px;
     height: 28px;
 }
 
 QRadioButton::indicator::unchecked {
      
-    image: url(:/icon/assets/icon/SliderRight.png);
+    image: url(:/icon/assets/icon/green.png);
 }
 
 QRadioButton::indicator::checked { 
-    image: url(:/icon/assets/icon/SliderLeft.png);
+    image: url(:/icon/assets/icon/red.png);
 }
 
 QRadioButton ,QCheckBox{
     spacing: 5px;
     font-size: 14px;
 }
-	background-color: rgba(255, 255, 255, 0);</string>
-    </property>
-    <property name="text">
-     <string>中文</string>
-    </property>
-    <property name="checked">
-     <bool>true</bool>
-    </property>
+
+QRadioButton {
+	background-color: rgba(255, 255, 255, 0);
+}
+background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>中文</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>170</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_dlc">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="icon.qrc">:/icon/assets/icon/more.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_dlc">
+       <property name="styleSheet">
+        <string notr="true">QRadioButton::indicator { 
+    width: 28px;
+    height: 28px;
+}
+
+QRadioButton::indicator::unchecked {
+	image: url(:/icon/assets/icon/gold.png);
+}
+
+QRadioButton::indicator::checked { 
+    image: url(:/icon/assets/icon/blue.png);
+}
+
+QRadioButton ,QCheckBox{
+    spacing: 5px;
+    font-size: 14px;
+}
+
+QRadioButton {
+	background-color: rgba(255, 255, 255, 0);
+}
+background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>本篇</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <zorder>graphicsView_title</zorder>
+   <zorder>listWidget</zorder>
+   <zorder>horizontalLayoutWidget</zorder>
+   <zorder>horizontalLayoutWidget_2</zorder>
+   <zorder>listWidget_char</zorder>
+   <zorder>graphicsView_char_1</zorder>
+   <zorder>graphicsView_char_2</zorder>
+   <zorder>graphicsView_char_3</zorder>
+   <zorder>verticalLayoutWidget</zorder>
+   <zorder>listWidget_talk</zorder>
+   <zorder>frame_title</zorder>
+   <zorder>widget</zorder>
+   <zorder>pushButton_char_1</zorder>
+   <zorder>pushButton_char_2</zorder>
+   <zorder>pushButton_char_3</zorder>
+   <zorder>horizontalLayoutWidget_3</zorder>
+   <zorder>horizontalLayoutWidget_4</zorder>
   </widget>
   <action name="actionxunhuan">
    <property name="text">
@@ -1345,7 +1474,9 @@ QRadioButton ,QCheckBox{
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
  <connections/>
  <slots>
   <slot>on_listWidget_char_clicked()</slot>

@@ -3,6 +3,7 @@
 # ------------------------------------------------------
 
 TEMPLATE = app
+VERSION = 1.2.0
 TARGET = xb2voice
 DESTDIR = ./release
 QT += core network gui multimedia widgets
